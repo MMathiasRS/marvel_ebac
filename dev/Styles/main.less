@@ -1,0 +1,120 @@
+@back_body : #040814;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+.hero {
+    background-image: url(https://cnbl-cdn.bamgrid.com/assets/6ad18f0d3ba4e6f51d1cb530683e1f0feca89858a176ecce9a76ebcaf43c7bd7/original);
+    background-size: cover;
+    padding: 5.6vw;
+    min-height: 85vh;
+
+
+
+    &__content {
+
+        max-width: 600px;
+
+
+        h1 {
+            margin: 40px 0;
+            font-weight: 700;
+            font-size: 41px;
+            color: #f9f9f9;
+            line-height: 54px;
+            text-align: start;
+        }
+
+        .button__primary {
+            width: 100%;
+            max-width: 400px;
+            height: 68px;
+            background: #f85246;
+            padding: 20.5px 33px;
+            text-align: center;
+            cursor: pointer;
+
+            a {
+                color: #f9f9f9;
+                align-items: center;
+                border-radius: 4px;
+                box-sizing: border-box;
+               
+                display: inline-flex;
+                justify-content: center;
+                text-align: center;
+                transition: all .2s ease 0s;
+                vertical-align: middle;
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-decoration: none;
+                text-transform: uppercase;
+
+
+            }
+
+
+           
+
+        }
+
+
+    }
+}
+
+@keyframes btn__hover{
+    to{
+        background: #6421ff;
+    }from{
+        background-color:#00f55e ;
+    }
+}
+
+body {
+    background-color: @back_body;
+}
+
+.hero_links{
+    margin-top: 20px;
+
+    a{
+        text-transform: uppercase;
+        font-style: italic ;
+        font-size: 20px;
+        line-height: 30px;
+        color: #f9f9f9;
+    }
+    
+}
+
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    flex-basis: calc(25% - 20px); 
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
